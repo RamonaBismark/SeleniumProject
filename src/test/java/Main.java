@@ -6,7 +6,7 @@ public class Main {
         System.out.println("----------------------------------------------------------------------------------------");
         System.out.println("Starting tests...");
         login.loginWithValidCredentials();
-//        login.loginWithInvalidCredentials();
+        login.loginWithInvalidCredentials();
 
 //        WishlistTest wishlist = new WishlistTest();
 //        System.out.println("----------------------------------------------------------------------------------------");
