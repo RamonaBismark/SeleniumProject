@@ -23,7 +23,7 @@ public class CartTest {
     @Test
 
     public void addToCartTest(){
-        WebElement accountLink = driver.findElement(By.cssSelector("#header > div > div.skip-links > div > a > span.label"));
+        WebElement accountLink = driver.findElement(By.cssSelector(".skip-account .label"));
         accountLink.click();
         driver.findElement(By.cssSelector("#header-account > div > ul > li.last > a")).click();
         driver.findElement(By.id("email")).sendKeys("ramonaramona@mailinator.com");
@@ -37,8 +37,6 @@ public class CartTest {
 //            System.err.println("Fail");
         Assert.assertTrue(welcomeTextElement.isDisplayed());
         Assert.assertEquals("Hello, Ramo Ramonescu!", welcomeText);
-
-
     }
 
     @After
